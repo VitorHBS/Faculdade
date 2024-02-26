@@ -1,0 +1,259 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #B5B5F8;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: #f9f9f9;
+    width: 80%;
+    height: 80vh;
+    box-shadow: 5px 5px 10px black;
+    display: flex;
+    flex-direction: column;
+}
+        /*Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 15px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    box-shadow: 1px 1px 7px black ;
+}
+nav a:hover{
+    background-color: rgb(161, 66, 250);
+    transform: scale(1.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.active {
+    background-color: rgb(161, 66, 250);
+}
+        /*Conteudo da página*/
+.sobre-mim-area{
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
+        /* Área 1*/
+.area-1 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    flex-direction: column;
+}
+.area-1 h1 {
+    font-size: 55px;
+    color: #111111;
+    margin-bottom: 20px;
+}
+.age {
+    font-size: 30px;
+    color: #111111;
+    margin: 0;
+}
+.area-1 h2 {
+    margin-top: 90px;
+    margin-bottom: 20px;
+    font-size: 55px;
+    color: #111111;
+}
+.desc-life{
+    color: #111111;
+    font-size: 20px;
+    padding-left: 150px;
+    padding-right: 80px;
+    line-height: 27px;
+}
+        /*Área 2*/
+.area-2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    flex-direction: column;
+}
+.area-2 h2 {
+    font-size: 30px;
+    color: #111111;
+}
+.hobbies {
+    width: 50%;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 0;
+}
+.area-2 img {
+    max-width: 100%;
+    height: 400px;
+    border-radius: 30px;
+}
+    /*Fim Page 1*/
+
+    /*Página 2*/
+.formacao {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lista h1 {
+    font-size: 55px;
+}
+.lista li {
+    list-style: none;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+/* Página 3 Portifólio*/
+
+.portifolio-container {
+    display: flex;
+    justify-content: center;
+    border: 3px solid black;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+.portifolio-title-desc h1{
+    font-size: 55px;
+    margin-bottom: 50px;
+}
+.portifolio-title-desc p{
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.github-area {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.github-area a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    height: 50px;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    box-shadow: 1px 1px 7px black;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px;
+}
+.github-area a:hover {
+    background-color: rgb(161, 66, 250);
+    transform: scale(1.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.link1 {
+    margin-bottom: 40px;
+}
+
+/* pagina 4 - Contato*/
+
+.contato-area {
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
+.contato-info {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3F3D56;
+    margin-top: 30px;
+    color: white;
+}
+.form {
+    display: flex;
+    font-size: 26px;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+form {
+    width: 80%;
+}
+form input {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+.form input:hover {
+    background-color: #dbdbdb;
+}
+.contato-info label {
+    margin-bottom: 5px;
+}
+textarea {
+    background-color: #f9f9f9 ;
+    border-radius: 10px;
+}
+textarea:hover {
+    background-color: #dbdbdb;
+}
+.button-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-contato input{
+    width: 36%;
+    height: 50px;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    box-shadow: 1px 1px 7px black;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.button-contato input:hover {
+    background-color: rgb(161, 66, 250);
+    transform: scale(1.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.contato-img {
+    background-color: #3F3D56;
+    margin-top: 30px;
+    width: 50%;
+    background-image: url(./img/undraw_to_the_moon_re_q21i.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
